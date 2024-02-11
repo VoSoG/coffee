@@ -1,0 +1,647 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ESTILOS GERAIS*/
+body {
+    background: linear-gradient(rgb(36, 35, 35), black);
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cor {
+    color: rgb(240, 133, 39);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+
+/* ESTILO DO MENU*/
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 1px double rgb(240, 133, 39);
+}
+
+.logo{
+    width: 100px;
+}
+
+.submenu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    
+}
+
+.submenu li:hover{
+    background-color: gold;
+    border-radius: 15px;
+    box-shadow: 0 0 10px gold;
+}
+
+.cabecalho {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: white;
+}
+
+.compra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.carrinho,
+.lupa {
+    width: 35px;
+    margin-right: 20px;
+}
+
+
+/* ESTILO DA TELA PRINCIPAL*/
+.principal {
+    background-image: linear-gradient(75deg, rgba(10, 10, 10, 0.944), rgba(244, 237, 237, 0.23), rgba(10, 10, 10, 0.944)), url(https://st2.depositphotos.com/2627021/10713/i/450/depositphotos_107135638-stock-photo-traditional-coffee-cup-with-heart.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 56vh;
+    margin-top: 15px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.espacamento {
+    margin-bottom: 100px;
+}
+
+.text-principal {
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.453);
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 15px;
+}
+
+.principal h1 {
+    margin-left: 15px;
+}
+
+.btn-principal {
+    background-color: sandybrown;
+    color: white;
+    width: 100px;
+    height: 40px;
+    margin-left: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-principal:hover {
+    background-color: gold;
+    box-shadow: 0px 0px 10px gold;
+}
+
+
+/* ESTILO DO SOBRE */
+.sobrenos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.261);
+    border-radius: 15px;
+    margin-left: 15px;
+}
+
+.sobrenos img {
+    width: 50%;
+}
+
+.cx-sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.cx-sobre p, h3 {
+    color: white;
+    padding: 20px;
+}
+
+
+.btn-sobre {
+    right: 50px;
+}
+
+.btn-sobre {
+    background-color: sandybrown;
+    color: white;
+    width: 100px;
+    height: 40px;
+    margin-left: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-sobre:hover {
+    background-color: gold;
+    border-radius: 15px;
+    box-shadow: 0 0 10px gold;
+}
+
+
+/* ESTILO DO MENU*/
+.cardapio {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cafe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.206);
+    margin: 3px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cafe img {
+    width: 65%;
+    border-radius: 100%;
+}
+
+.cafe p,
+.btn-comprar {
+    margin: 8px;
+}
+
+.btn-comprar {
+    background-color: sandybrown;
+    color: white;
+    width: 100px;
+    height: 40px;
+    margin-left: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-comprar:hover {
+    background-color: gold;
+    border-radius: 15px;
+    box-shadow: 0 0 10px gold;
+}
+
+
+/* ESTILO DOS OUTROS PRODUTOS*/
+.produtos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.outros {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.206);
+    margin: 3px;
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+}
+
+.icon-produtos {
+    width: 25px;
+    cursor: pointer;
+    border: 3px solid rgba(0, 0, 0, 0.345);
+    border-radius: 7px;
+}
+
+.produto-cafe {
+    width: 100px;
+}
+
+.estrela {
+    color: white;
+}
+
+.preço {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: green;
+}
+
+.preço s {
+    font-size: 10px;
+    color: white;
+}
+
+
+/* ESTILO DOS COMENTARIOS */
+.cx-comentario {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.comentario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.206);
+    border-radius: 10px;
+    margin: 3px;
+}
+
+.comentario img {
+    width: 50%;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+
+/* ESTILO DO CONTATO */
+.contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    background-color: rgb(41, 39, 39);
+    border-radius: 15px;
+}
+
+.user {
+    display: flex;    
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+}
+
+.user h3 {
+    font-size: 25px;
+}
+
+.user form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+    width: 40%;
+}
+
+.user input {
+    width: 100%;
+    background-color: black;
+    height: 25%;
+    border: 2px solid rgba(255, 255, 255, 0.206);
+}
+
+.btn-contato {
+    background-color: sandybrown;
+    color: white;
+    width: 170px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-contato:hover {
+    background-color: gold;
+    border-radius: 15px;
+    box-shadow: 0 0 10px gold;
+}
+
+
+/* ESTILO DO BLOG*/
+.blog {
+    display: flex;
+    width: 60%;
+}
+
+.blogs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px inset rgba(255, 255, 255, 0.206);
+    border-radius: 10px;
+    margin: 3px;
+}
+
+.blogs img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.blog p {
+    color: rgb(240, 133, 39);
+    margin-bottom: 10px;
+}
+
+.btn-blog {
+    background-color: sandybrown;
+    color: white;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.btn-blog:hover {
+    background-color: gold;
+    border-radius: 15px;
+    box-shadow: 0 0 10px gold;
+}
+
+
+/* ESTILO DO BOTÃO SUBIR(BODY) */
+.btn-subir {
+    background-color: rgba(255, 255, 255, 0.206);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.btn-subir img{
+    right: 0;
+    width: 40px;
+}
+
+.btn-subir:hover {
+    background-color: gold;
+    border-radius: 15px;
+    box-shadow: 0 0 10px gold;
+}
+
+
+/* ESTILO DO RODAPE */
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(28, 28, 28);
+    width: 100%;
+    height: 200px;
+    margin-top: 90px;
+}
+
+
+/* ESTILO DAS REDES SOCIAIS */
+.redessociais {
+    display: flex;
+}
+
+.rede {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px inset rgba(255, 255, 255, 0.206);
+    margin: 3px;
+    cursor: pointer;
+}
+
+.rede img {
+    width: 65%;
+    display: block;
+    margin: 0;
+}
+
+.rede img:hover {
+    width: 80%;
+}
+
+
+/* ESTILO DAS CATEGORIAS */
+.rodape {
+    display: flex;
+}
+
+.categoria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.206);
+    margin: 3px;
+    width: 95px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.categoria:hover {
+    background-color: rgb(240, 133, 39);
+    box-shadow: 0px 0px 200px rgb(240, 133, 39);
+    width: 140px;
+    height: 35px;
+}
+
+.categoria a {
+    color: white;
+    text-decoration: none;
+}
+
+.euluis a{
+    text-decoration: none;
+    cursor: pointer;
+    color: gold;
+}
+
+
+/* ESTILO DE RESPONSIVIDADE */
+@media screen and (max-width: 767px) {
+    /* ESTILO DO MENU */
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .submenu {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        font-size: 14px;
+    }
+
+    .compra {
+        margin-top: 15px;
+    }
+
+
+    /* ESTILO DA TELA PRINCIPAL */
+    .principal {
+        width: 100%;
+    }
+
+    .principal h1 {
+        width: 70%;
+    }
+
+    .text-principal {
+        width: 50%;
+        font-size: 12px;
+    }
+
+
+    /* ESTILO DO SOBRE NOS */
+    .sobrenos {
+        width: 80%;
+        font-size: 12px;
+        flex-direction: column;
+    }
+
+    .cx-sobre {
+        align-items: center;
+    }
+
+    .btn-sobre {
+        margin-bottom: 10px;
+    }
+
+
+    /* ESTILO DO MENU */
+    .cardapio {
+        width: 80%;
+        justify-content: center
+    }
+
+    .cafe {
+        width: 35%;
+    }
+
+    .btn-comprar {
+        font-size: 80%;
+        width: 80%;
+    }
+
+
+    /* ESTILO DOS OUTROS PRODUTOS */
+    .produtos {
+        width: 80%;
+        justify-content: center;
+    }
+
+    .outros {
+        width: 35%;
+    }
+
+    .icon-produtos {
+        width: 23%;
+    }
+
+
+    /* ESTILO DOS COMENTARIOS */
+    .cx-comentario {
+        width: 80%;
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    .aspas {
+        right: 100%;
+        width: 50%;
+    }
+
+    .comentario {
+        text-align: center;
+    }
+
+
+    /* ESTILO DO CONTATO */
+    .contato {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    .contato iframe {
+        width: 100%;
+    }
+
+    .user form {
+        width: 100%;
+    }
+
+    .user input {
+        margin: 6px;
+        width: 100%;
+        height: 30px;
+    }
+
+    .btn-contato {
+        margin: 10px;
+    }
+
+
+    /* ESTILO DOS BLOGS */
+    .blog {
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .blogs {
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* ESTILO DO RODAPE */
+    .redessociais {
+        width: 80%;
+    }
+
+    .categoria {
+        flex-wrap: wrap;
+        font-size: 70%;
+        width: 100%;
+    }
+
+    .categoria:hover {
+        width: 70%;
+    }
+}
